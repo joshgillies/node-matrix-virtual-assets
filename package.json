@@ -1,0 +1,37 @@
+{
+  "name": "node-matrix-virtual-assets",
+  "version": "1.0.0",
+  "description": "Create Squiz Matrix assets as virtual tress in JavaScript!",
+  "main": "index.js",
+  "dependencies": {
+    "tape": "^4.2.0"
+  },
+  "devDependencies": {
+    "standard": "^5.3.0",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshgillies/node-matrix-virtual-assets.git"
+  },
+  "keywords": [
+    "squiz",
+    "matrix",
+    "my",
+    "source",
+    "mysource",
+    "asset",
+    "assets",
+    "virtual",
+    "tree"
+  ],
+  "author": "Josh Gillies <npm@joshgilli.es> (http://joshgilli.es/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshgillies/node-matrix-virtual-assets/issues"
+  },
+  "homepage": "https://github.com/joshgillies/node-matrix-virtual-assets#readme"
+}
