@@ -4,7 +4,7 @@ module.exports = function asset (type, opts, children) {
   var asset = {}
 
   if (!type) {
-    throw new Error('Asset type must be dinfined')
+    throw new Error('Asset type must be defined')
   }
 
   asset.type = type
