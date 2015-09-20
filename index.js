@@ -1,3 +1,5 @@
+var extend = require('xtend')
+
 module.exports = function asset (type, opts, children) {
   var asset = {}
 
@@ -6,6 +8,17 @@ module.exports = function asset (type, opts, children) {
   }
 
   asset.type = type
+
+  if (children && children.length && Array.isArray(children)) {
+    asset.children = children.map(function getChild (child) {
+      if (typeof child === 'function') {
+        return child()
+      }
+      return child
+    })
+  }
+
+  asset = extend(opts, asset)
 
   return asset
 }
